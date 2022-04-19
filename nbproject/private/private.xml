@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/web/home.jsp</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/web/style/stylesheet.css</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/src/java/com/user/servlet/SignupServlet.java</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/src/java/com/DB/DBconnect.java</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/src/java/com/entity/User.java</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/src/java/com/DAO/UserDAO.java</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/web/signup.jsp</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/src/java/com/DAO/UserDAOImpl.java</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/web/admin/home.jsp</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/web/index.jsp</file>
+            <file>file:/C:/Users/ram/OneDrive/Documents/NetBeansProjects/shopersquare/src/java/com/user/servlet/LoginServlet.java</file>
+        </group>
+    </open-files>
+</project-private>
