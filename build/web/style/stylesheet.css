@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition: width none;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-slider-thumb{
+    background: #444;
+}
+
+.btn{
+
+    margin-top: 1rem;
+    display: inline-block;
+    padding:  0.1rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: rgb(0, 119, 255);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: blue;
+}
+
+
+
+.header .head{
+    background-color: #fff;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+}
+.header .head .logo{
+    font-size: 2.5rem;
+}
+.header .head .search-text{
+    width: 50rem;
+    height: 4rem;
+    border: .1rem solid rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+
+.header .head .search-text input{
+ 
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    height: 100%;
+width: 100%;
+text-decoration:  none;
+color: #444;
+}
+.header .head .search-text label{
+    margin-bottom: -2px;
+    font-size: 25px;
+    color: #444;
+    cursor: pointer;
+font-weight: 700;
+}
+.header .head .search-text label:hover{
+    color: blue;
+}
+.header .head .icon div,
+.header .head .icon a{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: #444;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header .head .icon div:hover,
+.header .head .icon a:hover{
+
+    color: rgb(0, 102, 255);
+}
+#search-btn{
+    display: none;
+}
+
+.header .header_2 .navbr{
+    background-color: rgb(0, 119, 255);
+}
+.header .header_2 .navbr{
+    text-align: center;
+}
+.header .header_2 .navbr a{
+    color: #fff;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+.header .header_2 .navbr a:hover{
+    border-bottom: 2px solid red;
+ 
+   
+}
+
+.header .head.active{
+    position: fixed;
+    top: 0;
+    left: 0; right: 0;
+    z-index: 1000;
+}
+
+
+body{
+    height: 100rem;
+}
+
+.bottom-navbr{
+    text-align: center;
+    background: rgb(0, 119, 255);
+    position: fixed;
+     bottom: 0; left: 0;
+    right: 0;
+    color: white;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navbr a{
+    font-size: 2.3rem;
+    padding: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+.bottom-navbr a:hover{
+    background-color: blue;
+}
+
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.9);
+    position: fixed;
+    top: 0;
+    right: -105%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.login-form-container.active{
+    right: 0;
+}
+.login-form-container form{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,0.1);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: 0.3rem 0.8rem rgba(0,0,0,0.1);
+border-radius: .5rem;
+margin: 2rem;
+}
+.login-form-container form h3{
+font-size: 2.5rem;
+text-transform: uppercase;
+color: #444;
+text-align: center;
+    
+}
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.login-form-container form .box{
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: .1rem solid rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: #444;
+    text-transform: none;
+}
+.login-form-container form .btn{
+
+    margin-top: 1rem;
+    display: inline-block;
+    padding:  0.1rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: rgb(0, 119, 255);
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.login-form-container form .btn:hover{
+    transform: translatey(4%);
+
+
+}
+.login-form-container form p {
+    padding-top: .8rem;
+    color: #666;
+    font-size: 1.5rem;
+
+}
+
+.login-form-container form p a{
+color: rgb(0, 119, 255);
+text-decoration: underline;
+}
+.login-form-container #close-login-btn{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: #444;
+    cursor: pointer;
+}
+ /*--- registration--*/
+
+   
+.first-box{
+    height: 85vh;
+    border: 4mm ridge rgba(0, 110, 255, 0.6);
+    padding-bottom: 100px;
+}
+    
+
+
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.signup form{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,0.1);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: 0.3rem 0.8rem rgba(0,0,0,0.1);
+border-radius: .5rem;
+margin: 2rem;
+    
+}
+.signup form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #444;
+    text-align: center;
+        
+    }
+    .signup form span{
+        display: block;
+        font-size: 1.5rem;
+        padding-top: .5rem;
+ }
+ .signup form .box{
+    width: 100%;
+    margin: .4rem 0;
+    font-size: 1.6rem;
+    border: .1rem solid rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: #444;
+    text-transform: none;
+}
+.signup form .form-submit{
+
+    margin-top: 1rem;
+    display: inline-block;
+    padding:  0.1rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: rgb(0, 119, 255);
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.signup form .form-submit:hover{
+transform: translatey(4%);
+background-color: white;
+color: rgb(0, 110, 255);
+border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header  .head{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+html{
+    scroll-padding-top: 0;
+}
+body{
+    padding-bottom: 5rem;
+}
+
+   .header .header_2{
+       display: none;
+   }
+
+   .bottom-navbr{
+       display: block;
+   }
+   #search-btn{
+       display: inline-block;
+   }
+   .search-text{
+       z-index: 10;
+   }
+   .header .head{
+       box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+       position: relative;
+   }
+   .header .head .search-text{
+       position: absolute ;
+       top: -115%; right: 2rem;
+       width: 90%;
+       box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+   }
+   .header .head .search-text.active{
+    top: 115%;
+   }
+   .carousel-inner{
+       margin-top: 5.6rem;
+       
+   }
+}
+
+
+@media(max-width:450px){
+    html{
+        font-size: 49%;
+    }
+    .header  .head{
+        padding: 2rem;
+    }
+  
+}
