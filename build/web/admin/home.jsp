@@ -1,6 +1,9 @@
 
 
 
+
+
+
 <%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page  isELIgnored="false" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -109,6 +112,13 @@
         
         
         
+<!---add category  model start--->
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+
+
+<!---add category  model end--->
         <!-------logout end ---->
         
         <div class="header_2">
@@ -163,6 +173,30 @@
                            <div class="card-body text-center">
                               <i class="fa-solid fa-arrow-right-from-bracket fa-3x text-primary"></i>
                                <h4>Logout</h4>
+                               ............
+                           </div>
+                       </div>
+                       </a>
+                   </div>
+                   
+                          <div class=" col-md-3 "  style="padding-bottom: 10px;">
+                       <a href="#" class="and" style="text-decoration: none;">
+                       <div class="card">
+                           <div class="card-body text-center">
+                               <i class="fa-solid fa-eye fa-3x text-danger"></i>
+                               <h4>All Category</h4>
+                               ............
+                           </div>
+                       </div>
+                       </a>
+                   </div>
+                   
+                          <div class=" col-md-3 "  style="padding-bottom: 10px;">
+                       <a href="addcategory.jsp" class="and" style="text-decoration: none;" >
+                       <div class="card">
+                           <div class="card-body text-center">
+                               <i class="fas fa-plus-square fa-3x text-primary"></i>
+                               <h4> Add Category</h4>
                                ............
                            </div>
                        </div>
