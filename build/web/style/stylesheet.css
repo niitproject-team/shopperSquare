@@ -849,7 +849,7 @@ h4{
 .one .add-btn{
     background: rgb(0,119,255);
     color: white;
-    width: 50%;
+    width: 100%;
     height: 3.5rem;
     transform: translateY(20px);
     opacity: 0;
@@ -864,7 +864,13 @@ h4{
 }
 
 
-/*---- preloader----*/
+.container .wo{
+    padding-top: 20px;
+    
+}
+
+
+/*---- About csss ---*/
 
 
 
@@ -932,6 +938,9 @@ body{
         width: 10%;
         height: 20%;
         
+    }
+    .container .go{
+        display: block;
     }
    
 }
