@@ -82,7 +82,7 @@
         </div>
         <div class="header_2">
             <nav class="navbr">
-                <a href="#home">home</a>
+                <a href="home.jsp">home</a>
                 <a href="#about">about</a>
                 <a href="#message us">message us</a>
                 <a href="#catogary">catogary</a>
@@ -94,7 +94,7 @@
  <!---bottom navbar-->
 
  <nav class="bottom-navbr">
-     <a href="#home.jsp" class="fa-solid fa-house-chimney" style="color: white;  text-decoration: none;"></a>
+     <a href="home.jsp" class="fa-solid fa-house-chimney" style="color: white;  text-decoration: none;"></a>
     <a href="#about"  class="fa-solid fa-address-book" style="color: white; text-decoration: none;"></a>
     <a href="#message us"  class="fa-solid fa-message"style="color: white; text-decoration: none;"></a>
     <a href="#catogary"  class="fa-solid fa-eye"style="color: white; text-decoration: none;"></a>
@@ -127,7 +127,12 @@
         
         <p><%= pro.getProductdescription()%></p>
         <h2>In stock: <%= pro.getProductquantity()%></h2>
+        <div class="btnnn text-center" style="">
+        <button class="add-btn" style=" font-size: 1.9rem;" >Add To Card</button>
+        <button class="add-btnn" style=" font-size: 1.9rem;" >Buy now</button>
     </div>
+    </div>
+    
   </div>
     </div>
 
