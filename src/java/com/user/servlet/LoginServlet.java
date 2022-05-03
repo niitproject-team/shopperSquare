@@ -33,9 +33,11 @@ public class LoginServlet extends HttpServlet{
             String email=request.getParameter("email");
              String password=request.getParameter("password");
              
-            if("admin@gmail.com".equals(email)&& "admin".equals(password))
+            if("admin@gmail.com".equals(email)&& "admin1234".equals(password))
             {
                 User us =new User();
+                
+                us.setName("Admin");
                 session.setAttribute("userobj",us);
                 response.sendRedirect("admin/home.jsp");
             }else{
@@ -63,3 +65,4 @@ public class LoginServlet extends HttpServlet{
     
     
 }
+
