@@ -874,6 +874,41 @@ h4{
 
 
 
+.btnnn{
+    padding-top: 10px;
+    height: 30px;
+    margin: 10px;
+}
+
+.btnnn .add-btn{
+    display: inline-block;
+    
+    margin: 2px;
+    width: 120px;
+    height: 40px;
+    background: rgb(0,116,225);
+    border-radius: 5%;
+    color: white;
+    
+   
+    
+}
+
+.btnnn .add-btnn{
+    display: inline-block;
+    
+    margin: 2px;
+    width: 120px;
+    height: 40px;
+    background: #ff8103;
+    border-radius: 5%;
+    color: white;
+    
+   
+    
+}
+    
+    
 
 
 
