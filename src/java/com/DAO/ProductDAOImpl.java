@@ -171,4 +171,84 @@ public class ProductDAOImpl {
           
           return false;
       }
+      
+      public List<Product> Userproducts(){
+          
+           List<Product> list= new ArrayList<Product>();
+        Product pro = null;
+        try{
+        String sql="select * from product where  productstatus=?";
+         PreparedStatement ps = conn.prepareStatement(sql);
+
+        
+        // ps.setString(1, "laptops");
+         ps.setString(1, "Active");
+       
+         
+         
+         ResultSet rs = ps.executeQuery();
+         while(rs.next())
+         {
+               pro = new Product();
+                 pro.setProductId(rs.getInt(1));
+                pro.setProductname(rs.getString(2));
+                pro.setProductdescription(rs.getString(3));
+                pro.setProductprice(rs.getString(4));
+                pro.setProductquantity(rs.getString(5));
+                pro.setProductdiscount(rs.getString(6));
+                pro.setProductcategory(rs.getString(7));
+                pro.setProductstatus(rs.getString(8));
+                pro.setPhotoName(rs.getString(9));
+                pro.setEmail(rs.getString(10));
+                list.add(pro);
+
+             
+         }
+         
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+          return list;
+      }
+   public List<Product> Userproducts(String  cat ){
+          
+           List<Product> list= new ArrayList<Product>();
+        Product pro = null;
+        try{
+        String sql="select * from product where productcategory='"+cat+"' and  productstatus=?";
+         PreparedStatement ps = conn.prepareStatement(sql);
+
+        
+        // ps.setString(1, "laptops");
+         ps.setString(1, "Active");
+       
+         
+         
+         ResultSet rs = ps.executeQuery();
+         
+         while(rs.next())
+         {
+               pro = new Product();
+                 pro.setProductId(rs.getInt(1));
+                pro.setProductname(rs.getString(2));
+                pro.setProductdescription(rs.getString(3));
+                pro.setProductprice(rs.getString(4));
+                pro.setProductquantity(rs.getString(5));
+                pro.setProductdiscount(rs.getString(6));
+                pro.setProductcategory(rs.getString(7));
+                pro.setProductstatus(rs.getString(8));
+                pro.setPhotoName(rs.getString(9));
+                pro.setEmail(rs.getString(10));
+                list.add(pro);
+
+             
+         }
+         
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+          return list;
+      }
+  
+      
 }
