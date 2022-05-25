@@ -34,9 +34,9 @@ public class EditProductServlet  extends HttpServlet{
             int id = Integer.parseInt(request.getParameter("id"));
               String productname = request.getParameter("productname");
             String productdescription = request.getParameter("productdescription");
-            String productprice = request.getParameter("productprice");
-            String productdiscount = request.getParameter("productdiscount");
-            String productquantity = request.getParameter("productquantity");
+                      int productprice = Integer.parseInt(request.getParameter("productprice"));
+                      int productdiscount = Integer.parseInt(request.getParameter("productdiscount"));
+                      int productquantity = Integer.parseInt(request.getParameter("productquantity"));
          
             String productstatus = request.getParameter("productstatus");
             

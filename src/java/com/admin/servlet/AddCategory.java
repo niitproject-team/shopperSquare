@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.admin.servlet;
 
 import com.DAO.CategoryDAOImpl;
@@ -41,7 +36,7 @@ public class AddCategory extends HttpServlet{
            if(f){
                
                
-              session.setAttribute("succMsg", "category add Successfully");
+              session.setAttribute("succMsg", "catagory add Successfully");
                 response.sendRedirect("admin/addcategory.jsp");
             }else{
                  session.setAttribute("failedMsg", "something wrong on server ");
